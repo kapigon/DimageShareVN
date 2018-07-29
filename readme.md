@@ -3,6 +3,10 @@ DimageShareVN
 ###################
 
 *******************
+Frameworkt PHPCodeignter
+*******************
+
+*******************
 Cài đặt cổng 8080
 *******************
 Đường dẫn: DimageShareVN\application\config\config.php
