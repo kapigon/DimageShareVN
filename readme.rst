@@ -1,70 +1,70 @@
 ###################
-What is CodeIgniter
+DimageShareVN
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+*******************
+Cài đặt cổng 8080
+*******************
+Đường dẫn: DimageShareVN\application\config\config.php
+$config['base_url'] = 'http://localhost:8080/DimageShareVN';
+
 
 *******************
-Release Information
+Cài đặt SQL
 *******************
-
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+Đường dẫn: DimageShareVN\news.sql
 
 *******************
-Server Requirements
+Cấu hình database
 *******************
+Đường dẫn: DimageShareVN\application\config\database.php
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'news',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
 
-PHP version 5.6 or newer is recommended.
+*******************
+Tài khoản đăng nhập
+*******************
+* Tài khoản admin : 
+	Username: admin / password: 123456
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+* Tài khoản author : 
+	Username: author  / password: 123456
+	Username: author1 / password: 123456
+	
+*******************
+Sử dụng
+*******************
+* Tài khoản admin: có quyền tạo danh mục, duyệt bài viết tạo do author, duyệt user đăng ký
 
-************
-Installation
-************
+* Tài khoản author: có quyền tạo, chỉnh sửa, xóa bài viết của mình tạo
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+*******************
+Thời gian sử dụng lần cuối
+*******************
+30/7/2018
 
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+###################
+NGƯỜI LÀM BÀI TEST
+###################
+Họ và tên: Lê Đình Hòa
+Email: hoalp2908@gmail.com
+ĐT: 0902255004
